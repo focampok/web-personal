@@ -27,6 +27,11 @@
   --vino-tinto: #56070c;
 }
 
+@font-face {
+  font-family:focampo;
+  src: url(AppleGaramond.ttf);
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -45,7 +50,10 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+h1 {
+  font-family:focampo
+}
+
 h2,
 h3,
 h4,
@@ -307,7 +315,6 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -320,7 +327,7 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: var(--azul-oscuro);
+  color: var(--white);
 }
 
 #hero p {
@@ -342,7 +349,7 @@ h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: var(--color-secundario);
+  color: var(--verde-cta);
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
